@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Final",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "linuxAndroidStudioPath": "/home/luca/android-studio-ide-201.7042882-linux/android-studio/bin/studio.sh",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Stack4Things-Iotronic-Lightning_Rod
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Default Connection Parameter, these values are editables</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Registration agent URL:</ion-label>
+      <ion-input placeholder="ws://192.168.1.101:8181/"
+                 value="ws://192.168.1.101:8181/"
+                 [(ngModel)]="lr.wampagent"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Realm:</ion-label>
+      <ion-input placeholder="s4t" 
+                 value="s4t" 
+                 [(ngModel)]="lr.realm"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Board UUID:</ion-label>
+      <ion-input placeholder="60290850-8b3e-42c0-9133-314e8bb4cb48"
+                 value="60290850-8b3e-42c0-9133-314e8bb4cb48" 
+                 [(ngModel)]="lr.uuid"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Board Name:</ion-label>
+      <ion-input placeholder="Android" 
+                 value="Android" 
+                 [(ngModel)]="lr.bname"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <ion-button color="primary" (click)="autobahn()">Connect to Iotronic</ion-button>
+  </div>
+  <div padding>
+    <ion-button color="primary" (click)="isalive()">Check S4T Status</ion-button>
+  </div>
+
+  <ion-toolbar>
+    <ion-title size="large">Openstack Credentials, these values are editables</ion-title>
+  </ion-toolbar>
+  <ion-item>
+    <ion-label floating>User Domain Name:</ion-label>
+    <ion-input placeholder="Default" value="Default" 
+               [(ngModel)]="lr.usrdmnname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Username:</ion-label>
+    <ion-input placeholder="admin"  value="admin" 
+               [(ngModel)]="lr.usrname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Password:</ion-label>
+    <ion-input placeholder="ADMIN_PASS"  value="ADMIN_PASS" 
+               [(ngModel)]="lr.password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Project Domain Name:</ion-label>
+    <ion-input placeholder="Default" value="Default" 
+               [(ngModel)]="lr.pjtname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Project Name:</ion-label>
+    <ion-input placeholder="admin" value="admin" 
+               [(ngModel)]="lr.pjname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Arancino Board UUID:</ion-label>
+    <ion-input placeholder="141bf3a2-d3b3-44b1-a417-8addfc248d40" value="141bf3a2-d3b3-44b1-a417-8addfc248d40" 
+               [(ngModel)]="lr.Auuid"></ion-input>
+  </ion-item>
+  <div padding>
+    <ion-button color="primary" (click)="getboards()">Board Arancino Check Status</ion-button>
+  </div>
+
+</ion-content>
+

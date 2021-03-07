@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Controllo cabina elettrica
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  <ion-button expand="full" (click)="requestPermission()">Notification Permission</ion-button>
+
+  <div padding>
+    <ion-button color="primary" (click)="loginiotronic()">Iotronic Login</ion-button>
+  </div>
+  <div padding>
+    <ion-button color="primary" (click)="getMyLocation()">GeoLocation Info</ion-button>
+  </div>
+  <div padding>
+    <ion-button color="primary" (click)="blepage()" slot="end">Bluetooth Connection
+      <ion-icon name="Bluetooth"></ion-icon>
+    </ion-button>
+  </div>
+
+
+</ion-content>

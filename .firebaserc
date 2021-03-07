@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ionicpwa-14b29": {
+      "hosting": {
+        "app": [
+          "ionicpwa-14b29"
+        ]
+      }
+    }
+  }
+}
